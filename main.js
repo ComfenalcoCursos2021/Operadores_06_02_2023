@@ -1,35 +1,16 @@
-let num1 = 50, num2 = 32;
-let resultado;
-let myStyle = "background: #0c690c;color: #fff;font-family: sans-serif;padding: 5px;border: 2px solid #0c6963;border-radius: 5px;";
+// Operadores lógicos 
 
-// Math.ceil(x)
-// Devuelve el entero más pequeño mayor o igual que un número.
+// Los Operadores lógicos  nos devuelve un resultado a 
+// partir de que se cumpla (o no) una condición, 
+// su resultado es Booleano, y sus operandos son 
+// valores lógicos o asimilables a ellos
 
-// Math.floor(x)
-// Devuelve el mayor entero menor que o igual a un número.
+let a = confirm("Variable A\n\t\tSeleciona Aceptar si deseas el boleano True\n\t\tSeleciona Cancelar si deseas el boleano False")
+let b = confirm("Variable B\n\t\tSeleciona Aceptar si deseas el boleano True\n\t\tSeleciona Cancelar si deseas el boleano False")
 
-// Math.max()
-// Devuelve el mayor de cero o más números.
-
-// Math.min()
-// Devuelve el más pequeño de cero o más números.
-
-// Math.pow(x, y)
-// Las devoluciones de base a la potencia de exponente, que es, baseexponent.
-
-// Math.random()
-// Devuelve un número pseudo-aleatorio entre 0 y 1.
-
-// Math.round(x)
-// Devuelve el valor de un número redondeado al número entero más cercano.
-
-// Math.sqrt(x)
-// Devuelve la raíz cuadrada positiva de un número.
-
-// Math.trunc(x)
-// Devuelve la parte entera del número x, la eliminación de los dígitos fraccionarios.
-
-// 5.68545.toFixed(x)
-// Devuelve la cantidad de numeros decimal segun x
-
-
+let cuerpo = document.querySelector("#myAND");
+cuerpo.insertAdjacentHTML("beforeend", ` <tr>
+                                            <td>${a}</td>
+                                            <td>${b}</td>
+                                            <td>${a && b}</td>
+                                        </tr>`);
